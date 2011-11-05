@@ -17,8 +17,11 @@ public class DoaAdapterView extends LinearLayout {
 
 		View v = inflate(context, R.layout.row, null);
 
+		TextView noAyat = (TextView) v.findViewById(R.id.noAyat);
+		noAyat.setText(entry.getAyatNo());
+		
 		ImageView imgAyat = (ImageView) v.findViewById(R.id.ayat);
-		imgAyat.setImageDrawable(entry.getImageAyat());
+		imgAyat.setImageResource(entry.getImageAyat());
 
 		TextView terjemahan = (TextView) v.findViewById(R.id.terjemahan);
 		terjemahan.setText(entry.getTerjemahan());
