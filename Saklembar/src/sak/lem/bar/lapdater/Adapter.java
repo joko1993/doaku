@@ -1,6 +1,5 @@
 package sak.lem.bar.lapdater;
 
-import android.graphics.drawable.BitmapDrawable;
 
 public class Adapter {
 	private int imageAyat;
