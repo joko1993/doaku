@@ -3,20 +3,30 @@ package sak.lem.bar.lapdater;
 import android.graphics.drawable.BitmapDrawable;
 
 public class Adapter {
-	private BitmapDrawable imageAyat;
+	private int imageAyat;
+	private int ayatNo;
 	private String terjemahan;
 
-	public Adapter(BitmapDrawable imageAyat, String terjemahan) {
+	public Adapter(int imageAyat, int ayatNo, String terjemahan) {
 		super();
 		this.imageAyat = imageAyat;
 		this.terjemahan = terjemahan;
+		this.ayatNo = ayatNo;
 	}
 
-	public BitmapDrawable getImageAyat() {
+	public int getAyatNo() {
+		return ayatNo;
+	}
+
+	public void setAyatNo(int ayatNo) {
+		this.ayatNo = ayatNo;
+	}
+
+	public int getImageAyat() {
 		return imageAyat;
 	}
 
-	public void setImageAyat(BitmapDrawable imageAyat) {
+	public void setImageAyat(int imageAyat) {
 		this.imageAyat = imageAyat;
 	}
 

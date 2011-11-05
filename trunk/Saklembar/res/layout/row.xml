@@ -11,10 +11,10 @@
         android:layout_gravity="center_horizontal|center_vertical" >
 
         <TextView
+            android:id="@+id/noAyat"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:padding="5dip"
-            android:text="10"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
     </LinearLayout>
@@ -30,7 +30,6 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:padding="5dip"
-            android:src="@drawable/ayat"
             />
 
         <TextView
